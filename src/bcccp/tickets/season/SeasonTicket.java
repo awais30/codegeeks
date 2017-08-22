@@ -21,6 +21,11 @@ public class SeasonTicket implements ISeasonTicket {
 							 
 							 // Class Constructor variables declarication
 		//TDO Implement constructor
+		//Initializing the class variables
+		this.ticketId = "11111"; // 11111 is the default ticket id at the start of the system.
+		this.carparkId = "22222"; // 22222 is the defaul carpar id at the start of the system.
+		this.startValidPeriod = -1; //-1 is the default valid period
+        this.endValidPeriod = -1; // -1 is the default valid period
 	}
 
 	@Override
