@@ -15,7 +15,7 @@ public class UsageRecord implements IUsageRecord {
 	
 	public UsageRecord(String ticketId, long startDateTime) {
 		this.ticketId = ticketId; //value been set
-		this.startDateTime = startDateTime; //value been set.
+		this.startDateTime = startDateTime; //value been set..
 	}
 
 	@Override
