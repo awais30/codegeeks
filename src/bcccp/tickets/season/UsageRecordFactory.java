@@ -7,7 +7,7 @@ public class UsageRecordFactory implements IUsageRecordFactory {
 	ArrayList<SeasonTicket> ticketArrayList; //to keep the list of all the session tickets been issued
 
 	public UsageRecordFactory(){
-		this.ticketArrayList = new ArrayList<SeasonTicket>();
+		this.ticketArrayList = new ArrayList<SeasonTicket>(); // arraylist been initalized
 	}
 
 	@Override
