@@ -20,7 +20,7 @@ public class UsageRecord implements IUsageRecord {
 
 	@Override
 	public void finalise(long endDateTime) {
-		this.endDateTime = endDateTime;
+		this.endDateTime = endDateTime; // endDatTime paremeter value set to the actual class variable of the class
 	}
 
 	@Override
