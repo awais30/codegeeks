@@ -10,7 +10,7 @@ public class SeasonTicketDAO implements ISeasonTicketDAO {
 	
 	
 	public SeasonTicketDAO(IUsageRecordFactory factory) {
-        factory = factory;
+        this.factory = factory;
 	}
 
 
