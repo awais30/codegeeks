@@ -8,7 +8,7 @@ public class UsageRecord implements IUsageRecord {
 	
 
 	public UsageRecord(){
-		ticketId = "11111";
+		ticketId = "11111"; //default value
 	}
 	
 	public UsageRecord(String ticketId, long startDateTime) {
