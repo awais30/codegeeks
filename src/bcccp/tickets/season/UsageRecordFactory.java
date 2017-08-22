@@ -15,6 +15,7 @@ public class UsageRecordFactory implements IUsageRecordFactory {
 
 		// new SeasonTicket object been created
 		SeasonTicket seasonTicket = new SeasonTicket(ticketId, "22222", startDateTime, 10);
+		ticketArrayList.add(seasonTicket);
 		return null;
 	}
 
