@@ -28,6 +28,7 @@ public class SeasonTicket implements ISeasonTicket {
 
 	@Override
 	public String getId() {
+		//returns getId using this command
         return this.ticketId;
 	}
 
