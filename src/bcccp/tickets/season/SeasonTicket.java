@@ -43,7 +43,7 @@ public class SeasonTicket implements ISeasonTicket {
 
 	@Override
 	public long getEndValidPeriod() {
-		return endValidPeriod;
+		return this.endValidPeriod;
 	}
 
 	@Override
