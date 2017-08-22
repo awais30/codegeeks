@@ -7,13 +7,13 @@ public class SeasonTicketDAO implements ISeasonTicketDAO {
 
 	private IUsageRecordFactory factory;
 
-	
+	public SeasonTicketDAO(){
+
+    }
 	
 	public SeasonTicketDAO(IUsageRecordFactory factory) {
         this.factory = factory;
 	}
-
-
 
 	@Override
 	public void registerTicket(ISeasonTicket ticket) {
