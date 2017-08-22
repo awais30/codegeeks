@@ -18,6 +18,8 @@ public class SeasonTicket implements ISeasonTicket {
 			             String carparkId, 
 			             long startValidPeriod,
 			             long endValidPeriod) {
+							 
+							 // Class Constructor variables declarication
 		//TDO Implement constructor
 	}
 
