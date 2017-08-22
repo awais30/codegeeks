@@ -20,7 +20,7 @@ public class UsageRecord implements IUsageRecord {
 
 	@Override
 	public void finalise(long endDateTime) {
-		
+		endDateTime = endDateTime;
 	}
 
 	@Override
