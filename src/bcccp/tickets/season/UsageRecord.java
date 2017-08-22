@@ -20,26 +20,22 @@ public class UsageRecord implements IUsageRecord {
 
 	@Override
 	public void finalise(long endDateTime) {
-		// TODO Auto-generated method stub
-		
+		this.endDateTime = endDateTime; // endDatTime paremeter value set to the actual class variable of the class
 	}
 
 	@Override
 	public long getStartTime() {
-		// TODO Auto-generated method stub
-		return 0;
+		return this.startDateTime; // returns the value of the start data time variable
 	}
 
 	@Override
 	public long getEndTime() {
-		// TODO Auto-generated method stub
-		return 0;
+		return this.endDateTime; // returns the value of the end data time variable
 	}
 
 	@Override
 	public String getSeasonTicketId() {
-		// TODO Auto-generated method stub
-		return null;
+		return this.ticketId; // returns the value of the ticketId variable.
 	}
 	
 }
