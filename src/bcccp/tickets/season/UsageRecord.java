@@ -14,7 +14,7 @@ public class UsageRecord implements IUsageRecord {
 	}
 	
 	public UsageRecord(String ticketId, long startDateTime) {
-
+		ticketId = ticketId;
 	}
 
 
