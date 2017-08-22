@@ -15,10 +15,8 @@ public class UsageRecord implements IUsageRecord {
 	
 	public UsageRecord(String ticketId, long startDateTime) {
 		this.ticketId = ticketId; //value been set
-		this.startDateTime = startDateTime; //value been set
+		this.startDateTime = startDateTime; //value been set.
 	}
-
-
 
 	@Override
 	public void finalise(long endDateTime) {
@@ -26,15 +24,11 @@ public class UsageRecord implements IUsageRecord {
 		
 	}
 
-
-
 	@Override
 	public long getStartTime() {
 		// TODO Auto-generated method stub
 		return 0;
 	}
-
-
 
 	@Override
 	public long getEndTime() {
@@ -42,14 +36,10 @@ public class UsageRecord implements IUsageRecord {
 		return 0;
 	}
 
-
-
 	@Override
 	public String getSeasonTicketId() {
 		// TODO Auto-generated method stub
 		return null;
 	}
-	
-	
 	
 }
