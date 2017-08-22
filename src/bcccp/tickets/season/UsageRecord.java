@@ -35,8 +35,7 @@ public class UsageRecord implements IUsageRecord {
 
 	@Override
 	public String getSeasonTicketId() {
-
-		return null;
+		return ticketId;
 	}
 	
 }
