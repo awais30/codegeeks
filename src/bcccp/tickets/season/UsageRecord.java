@@ -25,7 +25,7 @@ public class UsageRecord implements IUsageRecord {
 
 	@Override
 	public long getStartTime() {
-		return startDateTime;
+		return this.startDateTime;
 	}
 
 	@Override
