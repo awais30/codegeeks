@@ -34,6 +34,7 @@ public class SeasonTicket implements ISeasonTicket {
 
 	@Override
 	public String getCarparkId() {
+		//returns getCarparkId using this command
 		return this.carparkId;
 	}
 
