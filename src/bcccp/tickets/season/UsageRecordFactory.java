@@ -13,6 +13,7 @@ public class UsageRecordFactory implements IUsageRecordFactory {
 	@Override
 	public IUsageRecord make(String ticketId, long startDateTime) {
 
+		// new SeasonTicket object been created
 		SeasonTicket seasonTicket = new SeasonTicket(ticketId, "22222", startDateTime, 10);
 		return null;
 	}
