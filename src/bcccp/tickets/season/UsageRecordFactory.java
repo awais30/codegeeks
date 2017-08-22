@@ -6,9 +6,13 @@ public class UsageRecordFactory implements IUsageRecordFactory {
 
 	ArrayList<SeasonTicket> ticketArrayList; //to keep the list of all the session tickets been issued
 
+	public UsageRecordFactory(){
+
+	}
+
 	@Override
 	public IUsageRecord make(String ticketId, long startDateTime) {
-		// TODO Auto-generated method stub
+
 		return null;
 	}
 
