@@ -21,6 +21,8 @@ public class SeasonTicket implements ISeasonTicket {
 							 
 							 // Class Constructor variables declarication
 		//TDO Implement constructor
+		//Initializing the class variables
+		this.ticketId = "111111"; // 11111 is the default ticket id at the start of the system.
 	}
 
 	@Override
