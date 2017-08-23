@@ -7,5 +7,6 @@ public class EntryController {
     public void EntryController()
     {
         //Default constructor
+
     }
 }
