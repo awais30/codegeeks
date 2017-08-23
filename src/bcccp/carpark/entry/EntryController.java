@@ -43,7 +43,7 @@ public class EntryController
 
 	@Override
 	public void buttonPushed() {
-		// TODO Auto-generated method stub
+		System.out.println("Button Pushed");
 		
 	}
 
