@@ -51,7 +51,7 @@ public class EntryController
 
 	@Override
 	public void ticketInserted(String barcode) {
-		System.out.println("Ticket inserted");
+		System.out.println("Ticket inserted.");
 		
 	}
 
