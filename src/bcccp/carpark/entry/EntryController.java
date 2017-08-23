@@ -23,13 +23,16 @@ public class EntryController
 	private long entryTime;
 	private String seasonTicketId = null;
 	
-	
+	public EntryController(){
+
+	}
 
 	public EntryController(Carpark carpark, IGate entryGate, 
 			ICarSensor os, 
 			ICarSensor is,
 			IEntryUI ui) {
 		//entry controller
+
 	}
 
 
