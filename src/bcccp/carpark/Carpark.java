@@ -30,7 +30,7 @@ public class Carpark implements ICarpark {
 
 	@Override
 	public void register(ICarparkObserver observer) {
-		// TODO Auto-generated method stub
+		System.out.println("Register method");
 		
 	}
 
