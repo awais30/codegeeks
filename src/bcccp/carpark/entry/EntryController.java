@@ -59,8 +59,8 @@ public class EntryController
 
 	@Override
 	public void ticketTaken() {
-		// TODO Auto-generated method stub
-		
+
+		System.out.println("Ticket taken.");
 	}
 
 
