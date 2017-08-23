@@ -8,7 +8,7 @@ public class SeasonTicketDAO implements ISeasonTicketDAO {
 	private IUsageRecordFactory factory;
 
 	public SeasonTicketDAO(){
-	    //Initalizing the factory object
+	    //Initalizing the factory object.
         this.factory = new IUsageRecordFactory() {
             @Override
             public IUsageRecord make(String ticketId, long startDateTime) {
