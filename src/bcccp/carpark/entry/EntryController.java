@@ -67,8 +67,7 @@ public class EntryController
 
 	@Override
 	public void notifyCarparkEvent() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("Notified Car park event.");
 	}
 
 
