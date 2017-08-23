@@ -32,7 +32,11 @@ public class EntryController
 			ICarSensor is,
 			IEntryUI ui) {
 		//entry controller
-
+		this.carpark = carpark;
+		this.entryGate = entryGate;
+		this.outsideSensor = os;
+		this.insideSensor = is;
+		this.ui = ui;
 	}
 
 
