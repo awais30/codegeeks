@@ -63,7 +63,6 @@ public class Carpark implements ICarpark {
 
 	@Override
 	public IAdhocTicket issueAdhocTicket() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
@@ -71,7 +70,7 @@ public class Carpark implements ICarpark {
 
 	@Override
 	public void recordAdhocTicketEntry() {
-		// TODO Auto-generated method stub
+		System.out.println("Ticket been recorded");
 		
 	}
 
