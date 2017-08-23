@@ -6,6 +6,7 @@ package bcccp.carpark.Controllers;
 public class EntryController {
     public void EntryController()
     {
+        //Default constructor
 
     }
 }
