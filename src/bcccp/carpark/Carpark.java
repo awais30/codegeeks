@@ -16,7 +16,9 @@ public class Carpark implements ICarpark {
 	private IAdhocTicketDAO adhocTicketDAO;
 	private ISeasonTicketDAO seasonTicketDAO;
 	
-	
+	public Carpark(){
+
+	}
 	
 	public Carpark(String name, int capacity, 
 			IAdhocTicketDAO adhocTicketDAO, 
