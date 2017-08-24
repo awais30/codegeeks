@@ -6,6 +6,7 @@ import bcccp.tickets.season.IUsageRecordFactory;
 public class SeasonTicketDAO implements ISeasonTicketDAO {
 
 	private IUsageRecordFactory factory;
+	private ISeasonTicket ticket;
 
 	public SeasonTicketDAO(){
 	    //Initalizing the factory object.
@@ -23,8 +24,8 @@ public class SeasonTicketDAO implements ISeasonTicketDAO {
 
 	@Override
 	public void registerTicket(ISeasonTicket ticket) {
-		// TODO Auto-generated method stub
-		
+
+		this.ticket = ticket;
 	}
 
 
