@@ -32,7 +32,7 @@ public class SeasonTicketDAO implements ISeasonTicketDAO {
 
 	@Override
 	public void deregisterTicket(ISeasonTicket ticket) {
-		// TODO Auto-generated method stub
+		this.ticket = ticket;
 		
 	}
 
