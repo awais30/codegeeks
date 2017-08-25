@@ -32,6 +32,7 @@ public class AdhocTicket implements IAdhocTicket {
 	@Override
 	public int getTicketNo() {
 		// TODO Auto-generated method stub
+		this.ticketNo=ticketNo;
 		return 0;
 	}
 
@@ -39,6 +40,7 @@ public class AdhocTicket implements IAdhocTicket {
 	@Override
 	public String getBarcode() {
 		// TODO Auto-generated method stub
+		this.barcode=barcode;
 		return null;
 	}
 
@@ -46,6 +48,7 @@ public class AdhocTicket implements IAdhocTicket {
 	@Override
 	public String getCarparkId() {
 		// TODO Auto-generated method stub
+		this.carparkIdid=id;
 		return null;
 	}
 
@@ -66,6 +69,7 @@ public class AdhocTicket implements IAdhocTicket {
 
 	@Override
 	public boolean isCurrent() {
+		
 		// TODO Auto-generated method stub
 		return false;
 	}
