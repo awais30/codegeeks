@@ -93,7 +93,7 @@ public class AdhocTicket implements IAdhocTicket {
 	public boolean isPaid() {
 		
 		if(isPaid='true')
-		{
+		{ // success message to user 
 			System.out.println("Ticket Paid Successfully");
 			
 		}
