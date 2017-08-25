@@ -91,6 +91,17 @@ public class AdhocTicket implements IAdhocTicket {
 
 	@Override
 	public boolean isPaid() {
+		
+		if(isPaid='true')
+		{
+			System.out.println("Ticket Paid Successfully");
+			
+		}
+		else 
+		{
+			
+			Syestem.out.println("Payment not proceed successfully");
+		}
 		// TODO Auto-generated method stub
 		return false;
 	}
