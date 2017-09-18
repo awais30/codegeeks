@@ -21,5 +21,7 @@ class SeasonTicketTest {
         //Creating Object
         SeasonTicket seasonTicket = new SeasonTicket("S11111", "NobalPark111", 1111, 2222);
         //Creating id as string variable
+        String id = seasonTicket.getCarparkId();
+
     }
 }
