@@ -41,5 +41,7 @@ class SeasonTicketTest {
         //Creating Object
         SeasonTicket seasonTicket = new SeasonTicket("S11111", "NobalPark111", 1111, 2222);
         //Creating start as long variable
+        long end = seasonTicket.getEndValidPeriod();
+
     }
 }
