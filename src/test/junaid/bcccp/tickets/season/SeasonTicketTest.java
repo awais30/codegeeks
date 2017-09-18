@@ -39,5 +39,6 @@ class SeasonTicketTest {
     @Test
     void getEndValidPeriod(){
         //Creating Object
+        SeasonTicket seasonTicket = new SeasonTicket("S11111", "NobalPark111", 1111, 2222);
     }
 }
