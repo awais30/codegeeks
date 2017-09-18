@@ -43,6 +43,7 @@ class SeasonTicketTest {
         //Creating start as long variable
         long end = seasonTicket.getEndValidPeriod();
         //Using assertEqual method to check if the return value is good or not
+        assertEquals("2222", end);
 
     }
 }
