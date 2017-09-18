@@ -15,4 +15,9 @@ class SeasonTicketTest {
         String id = seasonTicket.getId();
         assertEquals("S11111", id);
     }
+
+    @Test
+    void getCarparkId(){
+
+    }
 }
