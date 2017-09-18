@@ -28,6 +28,6 @@ class SeasonTicketTest {
 
     @Test
     void getStartValidPeriod(){
-
+        //Creating Object
     }
 }
