@@ -13,5 +13,6 @@ class SeasonTicketTest {
     void getId() {
         SeasonTicket seasonTicket = new SeasonTicket("S11111", "NobalPark111", 1111, 2222);
         String id = seasonTicket.getId();
+        assertEquals("S11111", id);
     }
 }
