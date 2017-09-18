@@ -25,4 +25,9 @@ class SeasonTicketTest {
         //Using assertEqual method to check if the return value is good or not
         assertEquals("NobalPark111", id);
     }
+
+    @Test
+    void getStartValidPeriod(){
+
+    }
 }
