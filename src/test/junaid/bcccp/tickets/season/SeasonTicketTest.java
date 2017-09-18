@@ -9,4 +9,8 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 class SeasonTicketTest {
 
+    @Test
+    void getId() {
+
+    }
 }
