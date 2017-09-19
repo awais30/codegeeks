@@ -84,7 +84,7 @@ class SeasonTicketTest {
     @Test
     void endUsage(){
         //Creating Object
-
+        IUsageRecord record = null;
     }
 }
 
