@@ -25,5 +25,6 @@ class UsageRecordTest {
         UsageRecord usageRecord = new UsageRecord("NobalPark1111", 1111);
         //Creating time as long variable
         long time = 0;
+        //Using assertEqual method to check if the return value is good or not
     }
 }
