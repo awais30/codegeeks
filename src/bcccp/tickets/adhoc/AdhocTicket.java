@@ -93,7 +93,7 @@ public class AdhocTicket implements IAdhocTicket {
 	public boolean isPaid() {
 		
 		if(isPaid='true')
-		{
+		{ // success message to user 
 			System.out.println("Ticket Paid Successfully");
 			
 		}
@@ -110,6 +110,22 @@ public class AdhocTicket implements IAdhocTicket {
 	@Override
 	public float getCharge() {
 		// TODO Auto-generated method stub
+		float ticket = (float) 12.4;
+		float calcTicket=ticket;
+		if (paidticket<calcTicket);
+		
+		{
+			
+			System.out.pritnln("Please paid Full amount // See Controler Room");
+			
+			
+		}
+		
+		else 
+		{
+			System.out.println("Thanks for using Prking .See you next time");
+			
+		}
 		return 0;
 	}
 
