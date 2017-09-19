@@ -53,6 +53,7 @@ class SeasonTicketTest {
         //Creating inUse as long variable
         boolean inUse = seasonTicket.inUse();
         // Using  assertEqual method to check if the return value is good or not
+        assertEquals(false, inUse);
 
     }
 }
