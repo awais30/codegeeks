@@ -46,5 +46,6 @@ class UsageRecordTest {
         //Creating id as string
         String id = usageRecord.getSeasonTicketId();
         //Using assertEqual method to check if the return value is good or not
+        assertEquals("NobalPark1111", usageRecord.getEndTime());
     }
 }
