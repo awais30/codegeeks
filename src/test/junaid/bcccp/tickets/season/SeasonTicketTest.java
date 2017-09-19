@@ -59,6 +59,8 @@ class SeasonTicketTest {
 
     @Test
     void recordUsage(){
+        //Creating Object
         IUsageRecord record;
+
     }
 }
