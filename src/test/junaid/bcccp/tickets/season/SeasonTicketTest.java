@@ -84,6 +84,7 @@ class SeasonTicketTest {
     @Test
     void endUsage(){
         //Creating Object
+
     }
 }
 
