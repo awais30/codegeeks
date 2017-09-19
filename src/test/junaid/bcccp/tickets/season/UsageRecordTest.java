@@ -12,5 +12,6 @@ class UsageRecordTest {
     @Test
     void finalise(){
         //Creating object
+        UsageRecord usageRecord = new UsageRecord("NobalPark1111", 1111);
     }
 }
