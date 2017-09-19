@@ -12,5 +12,7 @@ class SeasonTicketDAOTest {
     @Test
     void SeasonTicketDAO(){
         //Creating Object
+        SeasonTicket seasonTicket = new SeasonTicket("TIC1111", "NobalPark111",1111, 2222);
+
     }
 }
