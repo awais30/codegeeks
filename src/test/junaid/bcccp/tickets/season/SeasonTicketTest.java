@@ -61,6 +61,7 @@ class SeasonTicketTest {
     void recordUsage(){
         //Creating Object
         IUsageRecord record;
+        SeasonTicket seasonTicket = new SeasonTicket("S11111", "NobalPark111", 1111, 2222);
 
     }
 }
