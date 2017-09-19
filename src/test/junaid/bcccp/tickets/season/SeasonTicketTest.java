@@ -58,7 +58,7 @@ class SeasonTicketTest {
     }
 
     @Test
-    void recordUsage(IUsageRecord record){
-
+    void recordUsage(){
+        IUsageRecord record;
     }
 }
