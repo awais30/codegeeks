@@ -21,6 +21,6 @@ class UsageRecordTest {
 
     @Test
     void getStartTime(){
-
+        //Creating object
     }
 }
