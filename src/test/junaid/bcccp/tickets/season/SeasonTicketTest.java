@@ -96,6 +96,7 @@ class SeasonTicketTest {
     void getUsageRecords(){
         //Creating Object
         IUsageRecord record = null;
+        //creating object of the season ticket
     }
 }
 
