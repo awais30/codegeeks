@@ -52,5 +52,7 @@ class SeasonTicketTest {
         SeasonTicket seasonTicket = new SeasonTicket("S11111", "NobalPark111", 1111, 2222);
         //Creating inUse as long variable
         boolean inUse = seasonTicket.inUse();
+        // Using  assertEqual method to check if the return value is good or not
+
     }
 }
