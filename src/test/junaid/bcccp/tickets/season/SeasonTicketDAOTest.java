@@ -14,5 +14,6 @@ class SeasonTicketDAOTest {
         //Creating Object
         SeasonTicketDAO seasonTicketDAO = new SeasonTicketDAO();
 
+
     }
 }
