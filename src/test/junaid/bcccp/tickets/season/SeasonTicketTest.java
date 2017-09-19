@@ -67,6 +67,8 @@ class SeasonTicketTest {
         IUsageRecord record = null;
         //creating object of the season ticket
         SeasonTicket seasonTicket = new SeasonTicket("S11111", "NobalPark111", 1111, 2222);
-
+        Assertions.assertThrows(RuntimeException.class, () -> {
+            seasonTicket.recordUsage(record);
+        });
     }
 }
