@@ -38,4 +38,9 @@ class UsageRecordTest {
         //Using assertEqual method to check if the return value is good or not
         assertEquals(time, usageRecord.getEndTime());
     }
+
+    @Test
+    void getSeasonTicketId(){
+
+    }
 }
