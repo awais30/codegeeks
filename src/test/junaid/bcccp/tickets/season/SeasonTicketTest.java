@@ -56,4 +56,9 @@ class SeasonTicketTest {
         assertEquals(false, inUse);
 
     }
+
+    @Test
+    void recordUsage(IUsageRecord record){
+
+    }
 }
