@@ -85,6 +85,7 @@ class SeasonTicketTest {
     void endUsage(){
         //Creating Object
         IUsageRecord record = null;
+        //creating object of the season ticket
     }
 }
 
