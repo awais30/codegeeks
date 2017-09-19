@@ -136,28 +136,14 @@ class SeasonTicketDAOTest {
             }
         };
 
-        IUsageRecord factory = new IUsageRecord() {
-            @Override
-            public void finalise(long endDateTime) {
-
-            }
+        IUsageRecordFactory factory = new IUsageRecordFactory() {
 
             @Override
-            public long getStartTime() {
-                return 0;
-            }
-
-            @Override
-            public long getEndTime() {
-                return 0;
-            }
-
-            @Override
-            public String getSeasonTicketId() {
+            public IUsageRecord make(String ticketId, long startDateTime) {
                 return null;
             }
         }
-        SeasonTicketDAO seasonTicketDAO = new SeasonTicketDAO();
+        SeasonTicketDAO seasonTicketDAO = new SeasonTicketDAO(factory);
         seasonTicketDAO.deregisterTicket(seasonTicket);
     }
 }
