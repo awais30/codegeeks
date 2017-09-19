@@ -27,6 +27,6 @@ class SeasonTicketDAOTest {
 
     @Test
     void registerTicket(){
-
+        //Creating Object
     }
 }
