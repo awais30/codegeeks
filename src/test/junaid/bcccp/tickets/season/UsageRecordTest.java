@@ -32,5 +32,6 @@ class UsageRecordTest {
     @Test
     void getEndTime(){
         //Creating object
+        UsageRecord usageRecord = new UsageRecord("NobalPark1111", 1111);
     }
 }
