@@ -74,6 +74,6 @@ class SeasonTicketTest {
 
     @Test
     void getCurrentUsageRecord(){
-
+        //Creating Object
     }
 }
