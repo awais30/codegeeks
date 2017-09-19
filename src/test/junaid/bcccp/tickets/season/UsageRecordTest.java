@@ -33,5 +33,6 @@ class UsageRecordTest {
     void getEndTime(){
         //Creating object
         UsageRecord usageRecord = new UsageRecord("NobalPark1111", 1111);
+        //Creating time as long variable
     }
 }
