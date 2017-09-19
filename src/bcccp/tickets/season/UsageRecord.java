@@ -6,44 +6,36 @@ public class UsageRecord implements IUsageRecord {
 	long startDateTime;
 	long endDateTime;
 	
-	
+
+	public UsageRecord(){
+		ticketId = "11111"; //default value
+        startDateTime = -1; //default value
+		endDateTime = -1; //default value
+	}
 	
 	public UsageRecord(String ticketId, long startDateTime) {
-		//TODO Implement constructor
+		this.ticketId = ticketId; //value been set
+		this.startDateTime = startDateTime; //value been set..
 	}
-
-
 
 	@Override
 	public void finalise(long endDateTime) {
-		// TODO Auto-generated method stub
-		
+		this.endDateTime = endDateTime; // endDatTime paremeter value set to the actual class variable of the class
 	}
-
-
 
 	@Override
 	public long getStartTime() {
-		// TODO Auto-generated method stub
-		return 0;
+		return this.startDateTime; // returns the value of the start data time variable
 	}
-
-
 
 	@Override
 	public long getEndTime() {
-		// TODO Auto-generated method stub
-		return 0;
+		return this.endDateTime; // returns the value of the end data time variable
 	}
-
-
 
 	@Override
 	public String getSeasonTicketId() {
-		// TODO Auto-generated method stub
-		return null;
+		return this.ticketId; // returns the value of the ticketId variable.
 	}
-	
-	
 	
 }
