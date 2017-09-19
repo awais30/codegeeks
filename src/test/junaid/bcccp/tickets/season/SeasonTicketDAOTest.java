@@ -85,4 +85,9 @@ class SeasonTicketDAOTest {
         SeasonTicketDAO seasonTicketDAO = new SeasonTicketDAO(factory);
         seasonTicketDAO.registerTicket(iSeasonTicket);
     }
+
+    @Test
+    void deregisterTicket(){
+
+    }
 }
