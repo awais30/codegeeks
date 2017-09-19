@@ -42,5 +42,6 @@ class UsageRecordTest {
     @Test
     void getSeasonTicketId(){
         //Creating object
+        UsageRecord usageRecord = new UsageRecord("NobalPark1111", 1111);
     }
 }
