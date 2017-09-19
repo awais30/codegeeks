@@ -45,4 +45,9 @@ class SeasonTicketTest {
         // Using  assertEqual method to check if the return value is good or not
         assertEquals(2222, end);
     }
+
+    @Test
+    void inUse(){
+
+    }
 }
