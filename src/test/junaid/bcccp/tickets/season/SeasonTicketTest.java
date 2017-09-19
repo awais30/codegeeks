@@ -1,6 +1,9 @@
 package bcccp.tickets.season;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
+import java.awt.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -57,11 +60,11 @@ class SeasonTicketTest {
 
     }
 
+
     @Test
     void recordUsage(){
         //Creating Object
-        IUsageRecord record;
-        SeasonTicket seasonTicket = new SeasonTicket("S11111", "NobalPark111", 1111, 2222);
+        IUsageRecord record = null;
 
     }
 }
