@@ -41,6 +41,6 @@ class UsageRecordTest {
 
     @Test
     void getSeasonTicketId(){
-
+        //Creating object
     }
 }
