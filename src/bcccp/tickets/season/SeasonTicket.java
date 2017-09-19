@@ -58,6 +58,9 @@ public class SeasonTicket implements ISeasonTicket {
 
 	@Override
 	public void recordUsage(IUsageRecord record) {
+		if(record == null){
+			throw new RuntimeException("Record is not been initalized");
+		}
 		currentUsage = record;
 		if (!usages.contains(record) ) {
 			usages.add(record);
