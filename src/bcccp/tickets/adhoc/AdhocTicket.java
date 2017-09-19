@@ -136,9 +136,10 @@ public class AdhocTicket implements IAdhocTicket {
 		private static final DateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
          private static final DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
 
-
+// Creating date object 
         Date date = new Date();
-        System.out.println(sdf.format(date));
+        System.out.println(sdf.format(date)); // show date to user on screen 
+		
 
         Calendar cal = Calendar.getInstance();
         System.out.println(sdf.format(cal.getTime()));
