@@ -90,7 +90,6 @@ class SeasonTicketTest {
         Assertions.assertThrows(RuntimeException.class, () -> {
             seasonTicket.endUsage(1111);
         });
-
     }
 }
 
