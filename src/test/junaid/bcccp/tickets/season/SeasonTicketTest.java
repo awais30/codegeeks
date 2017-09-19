@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.awt.*;
+import java.util.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -98,6 +99,8 @@ class SeasonTicketTest {
         IUsageRecord record = null;
         //creating object of the season ticket
         SeasonTicket seasonTicket = new SeasonTicket("S11111", "NobalPark111", 1111, 2222);
+        java.util.List<IUsageRecord> list = new LinkedList<>();
+        assertEquals(list,seasonTicket.getUsageRecords());
     }
 }
 
