@@ -71,4 +71,9 @@ class SeasonTicketTest {
             seasonTicket.recordUsage(record);
         });
     }
+
+    @Test
+    void getCurrentUsageRecord(){
+
+    }
 }
