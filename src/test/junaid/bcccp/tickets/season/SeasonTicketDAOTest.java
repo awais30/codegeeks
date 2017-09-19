@@ -21,5 +21,7 @@ class SeasonTicketDAOTest {
             }
         };
 
+        SeasonTicketDAO seasonTicketDAO = new SeasonTicketDAO(factory);
+
     }
 }
