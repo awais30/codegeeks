@@ -16,10 +16,7 @@ public class AdhocTicket implements IAdhocTicket {
 	
 	public AdhocTicket(String carparkId, int ticketNo, String barcode) {
 
-<<<<<<< HEAD
-=======
-   
->>>>>>> 148576ae015524094af9f0c513d7be420fcb6eb2
+
 	
 	//TDO Implement constructor
         String carparkId=1;
@@ -147,7 +144,7 @@ public class AdhocTicket implements IAdhocTicket {
         Calendar cal = Calendar.getInstance();
         System.out.println(sdf.format(cal.getTime()));
 
-       /* LocalDateTime now = LocalDateTime.now();
+       LocalDateTime now = LocalDateTime.now();
         System.out.println(dtf.format(now));
 
         LocalDate localDate = LocalDate.now();
