@@ -91,7 +91,15 @@ class SeasonTicketTest {
             seasonTicket.endUsage(1111);
         });
     }
+
+    @Test
+    void getUsageRecords(){
+
+    }
 }
+
+
+
 
 
 
