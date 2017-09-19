@@ -142,7 +142,7 @@ class SeasonTicketDAOTest {
             public IUsageRecord make(String ticketId, long startDateTime) {
                 return null;
             }
-        }
+        };
         SeasonTicketDAO seasonTicketDAO = new SeasonTicketDAO(factory);
         seasonTicketDAO.deregisterTicket(seasonTicket);
     }
