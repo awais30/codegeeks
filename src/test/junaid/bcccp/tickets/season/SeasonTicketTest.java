@@ -100,6 +100,7 @@ class SeasonTicketTest {
         //creating object of the season ticket
         SeasonTicket seasonTicket = new SeasonTicket("S11111", "NobalPark111", 1111, 2222);
         java.util.List<IUsageRecord> list = new LinkedList<>();
+        //assert status
         assertEquals(list,seasonTicket.getUsageRecords());
     }
 }
