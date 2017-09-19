@@ -17,6 +17,5 @@ class UsageRecordTest {
         long time = 0;
         //Using assertEqual method to check if the return value is good or not
         assertEquals(time, usageRecord.getEndTime());
-
     }
 }
