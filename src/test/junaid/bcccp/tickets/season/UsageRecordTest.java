@@ -44,6 +44,6 @@ class UsageRecordTest {
         //Creating object
         UsageRecord usageRecord = new UsageRecord("NobalPark1111", 1111);
         //Creating id as string
-
+        String id = usageRecord.getSeasonTicketId();
     }
 }
