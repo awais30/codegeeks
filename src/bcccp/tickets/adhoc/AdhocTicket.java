@@ -79,7 +79,7 @@ public class AdhocTicket implements IAdhocTicket {
 	@Override
 	public void pay(long dateTime, float charge) {
 		// TODO Auto-generated method stub
-		this.dateTime= LocalDateTime.now();
+		this.dateTime= LocalDateTime.now();//
 		this.charge=charge;
 		
 		
