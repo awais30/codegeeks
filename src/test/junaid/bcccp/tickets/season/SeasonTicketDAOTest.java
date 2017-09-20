@@ -165,6 +165,7 @@ class SeasonTicketDAOTest {
     @Test
     void getNumberOfTickets(){
         // Creating Object
+        ISeasonTicket iSeasonTicket;
     }
 }
 
