@@ -30,14 +30,15 @@ public class SeasonTicket implements ISeasonTicket {
 	@Override
 	public String getId() {
 		//returns getId using this command
-		this.getCarparkId=carparkId
-        return carparkId;
+		this.ticketId=ticketId;
+        return ticketId;
 	}
 
 	@Override
 	public String getCarparkId() {
 		//returns getCarparkId using this command
-		return this.carparkId;
+		this.getCarparkId=carparkId
+        return carparkId;
 	}
 
 	@Override
