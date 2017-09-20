@@ -4,116 +4,136 @@ import java.util.Date;
 
 public class AdhocTicket implements IAdhocTicket {
 	
-	private String carparkId;
-	private int ticketNo;
+	private String carparkId_;
+	private int ticketNo_;
 	private long entryDateTime;
 	private long paidDateTime;
 	private long exitDateTime;
 	private float charge;
 	private String barcode;
+	private STATE state_;
+	
+	private enum STATE { ISSUED, CURRENT, PAID, EXITED }
 
 	
 	
 	public AdhocTicket(String carparkId, int ticketNo, String barcode) {
-		//TDO Implement constructor
-
-		//String carparkId;
-		//int ticketNo;
-		//String barcode;
-
+		this.carparkId_ = carparkId;
+		this.ticketNo_ = ticketNo;
+		this.barcode = barcode;
+		this.state_ = STATE.ISSUED;		
 	}
 
-
-	@Override
-	public int getTicketNo() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-
+	
+	
 	@Override
 	public String getBarcode() {
-		// TODO Auto-generated method stub
-		return null;
+		return barcode;
 	}
 
 
+	
 	@Override
 	public String getCarparkId() {
-		// TODO Auto-generated method stub
-		return null;
+		return carparkId_;
 	}
 
-
+	
+	
 	@Override
-	public void enter(long dateTime) {
-		// TODO Auto-generated method stub
-		
+	public int getTicketNo() {
+		return ticketNo_;
 	}
+	
 
-
+	
+	@Override
+	public void enter(long entryDateTime) {
+		this.entryDateTime = entryDateTime;
+		this.state_ = STATE.CURRENT;		
+	}
+	
+	
+	
 	@Override
 	public long getEntryDateTime() {
-		// TODO Auto-generated method stub
-		return 0;
+		return entryDateTime;
 	}
 
-
+	
+	
 	@Override
-	public boolean isCurrent() {
-		// TODO Auto-generated method stub
-		return false;
+	public void pay(long paidDateTime, float charge) {
+		this.paidDateTime = paidDateTime;
+		this.charge = charge;
+		state_ = STATE.PAID;
 	}
-
-
-	@Override
-	public void pay(long dateTime, float charge) {
-		// TODO Auto-generated method stub
-		
-	}
-
-
+	
+	
+	
 	@Override
 	public long getPaidDateTime() {
-		// TODO Auto-generated method stub
-		return 0;
+		return paidDateTime;
 	}
 
-
-	@Override
-	public boolean isPaid() {
-		// TODO Auto-generated method stub
-		return false;
-	}
 
 
 	@Override
 	public float getCharge() {
-		// TODO Auto-generated method stub
-		return 0;
+		return charge;
 	}
+
+	
+	
+	public String toString() {
+		Date entryDate = new Date(entryDateTime);
+		Date paidDate = new Date(paidDateTime);
+		Date exitDate = new Date(exitDateTime);
+
+		return "Carpark    : " + carparkId_ + "\n" +
+		       "Ticket No  : " + ticketNo_ + "\n" +
+		       "Entry Time : " + entryDate + "\n" + 
+		       "Paid Time  : " + paidDate + "\n" + 
+		       "Exit Time  : " + exitDate + "\n" +
+		       "State      : " + state_ + "\n" +
+		       "Barcode    : " + barcode;		
+	}
+
+
+
+	@Override
+	public boolean isCurrent() {
+		return state_ == STATE.CURRENT;
+	}
+
+
+
+	@Override
+	public boolean isPaid() {
+		return state_ == STATE.PAID;
+	}
+
 
 
 	@Override
 	public void exit(long dateTime) {
-		// TODO Auto-generated method stub
-		
+		exitDateTime = dateTime;
+		state_ = STATE.EXITED;
 	}
+
 
 
 	@Override
 	public long getExitDateTime() {
-		// TODO Auto-generated method stub
-		return 0;
+		return exitDateTime;
 	}
+
 
 
 	@Override
 	public boolean hasExited() {
-		// TODO Auto-generated method stub
-		return false;
+		return state_ == STATE.EXITED;
 	}
 
-	
-	
+
 }
