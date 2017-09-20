@@ -6,7 +6,7 @@ import java.util.List;
 
 public class SeasonTicket implements ISeasonTicket {
 	
-	private List<IUsageRecord> usages;
+	private List<IUsageRecord> usages;// declaring array list name usage
 	private IUsageRecord currentUsage = null;//initilize record usage to null
 	
 	private String ticketId;
@@ -72,6 +72,9 @@ public class SeasonTicket implements ISeasonTicket {
 	{
 		
 	    int record;
+		int carparkId;
+		
+		
 		
 		// TODO Auto-generated method stub
 		
