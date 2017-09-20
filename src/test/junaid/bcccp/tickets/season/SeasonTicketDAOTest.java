@@ -198,6 +198,7 @@ class SeasonTicketDAOTest {
     @Test
     void recordTicketExit(){
         // Creating Object
+        ISeasonTicket iSeasonTicket;
     }
 }
 
