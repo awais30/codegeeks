@@ -174,6 +174,9 @@ public class AdhocTicket implements IAdhocTicket {
 			System.out.println("Exit successfully");
 			
 		}
+		
+		else
+		
 		return false;
 	}
 
