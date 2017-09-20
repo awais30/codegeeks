@@ -12,6 +12,6 @@ class UsageRecordFactoryTest {
     @Test
     void make(){
         //Creating Object
-
+        SeasonTicket seasonTicket = new SeasonTicket();
     }
 }
