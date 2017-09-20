@@ -208,7 +208,7 @@ class SeasonTicketDAOTest {
         SeasonTicketDAO seasonTicketDAO = new SeasonTicketDAO(factory);
         iSeasonTicket = seasonTicketDAO.findTicketById("736366336363");
         Assertions.assertThrows(RuntimeException.class, () -> {
-            seasonTicketDAO.recordTicketExit("1");
+            seasonTicketDAO.recordTicketExit("1"); //
         });
     }
 }
