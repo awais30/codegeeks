@@ -7,6 +7,6 @@ public interface ISeasonTicketDAO {
 	public int getNumberOfTickets();
 	
 	public ISeasonTicket findTicketById(String ticketId);
-	public void recordTicketEntry(String ticketId );
+	public void recordTicketEntry(String ticketId);
 	public void recordTicketExit(String ticketId);
 }
