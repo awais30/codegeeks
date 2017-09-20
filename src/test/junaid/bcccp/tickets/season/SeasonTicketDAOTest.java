@@ -159,7 +159,7 @@ class SeasonTicketDAOTest {
         };
         SeasonTicketDAO seasonTicketDAO = new SeasonTicketDAO(factory);
         iSeasonTicket = seasonTicketDAO.findTicketById("736366336363");
-        assertEquals("736366336363", iSeasonTicket);
+        assertEquals(null, iSeasonTicket);
     }
 }
 
