@@ -166,6 +166,12 @@ class SeasonTicketDAOTest {
     void getNumberOfTickets(){
         // Creating Object
         ISeasonTicket iSeasonTicket;
+        IUsageRecordFactory factory = new IUsageRecordFactory() {
+            @Override
+            public IUsageRecord make(String ticketId, long startDateTime) {
+                return null;
+            }
+        };
     }
 }
 
