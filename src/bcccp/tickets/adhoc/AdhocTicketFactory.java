@@ -4,9 +4,8 @@ public class AdhocTicketFactory implements IAdhocTicketFactory {
 
 	@Override
 	public IAdhocTicket make(String carparkId, int ticketNo) {
-		// TODO Auto-generated method stub
-		return null;
+		String barcode = "A" + Integer.toHexString(ticketNo);
+		return new AdhocTicket(carparkId, ticketNo, barcode);
 	}
-
 
 }
