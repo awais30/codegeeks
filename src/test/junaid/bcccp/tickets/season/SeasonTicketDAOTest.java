@@ -196,7 +196,12 @@ class SeasonTicketDAOTest {
                 return null;
             }
         };
-
+        IUsageRecordFactory factory = new IUsageRecordFactory() {
+            @Override
+            public IUsageRecord make(String ticketId, long startDateTime) {
+                return null;
+            }
+        }
         SeasonTicketDAO seasonTicketDAO = new SeasonTicketDAO();
     }
 }
