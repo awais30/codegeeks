@@ -24,6 +24,10 @@ public class Carpark implements ICarpark {
 			IAdhocTicketDAO adhocTicketDAO, 
 			ISeasonTicketDAO seasonTicketDAO) {
 		this.capacity = capacity;
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 	}
 
 
