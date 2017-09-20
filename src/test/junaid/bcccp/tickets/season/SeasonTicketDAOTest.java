@@ -150,52 +150,7 @@ class SeasonTicketDAOTest {
     @Test
     void findTicketById(){
         // Creating Object
-        ISeasonTicket iSeasonTicket = new ISeasonTicket() {
-            @Override
-            public String getId() {
-                return null;
-            }
-
-            @Override
-            public String getCarparkId() {
-                return null;
-            }
-
-            @Override
-            public long getStartValidPeriod() {
-                return 0;
-            }
-
-            @Override
-            public long getEndValidPeriod() {
-                return 0;
-            }
-
-            @Override
-            public boolean inUse() {
-                return false;
-            }
-
-            @Override
-            public void recordUsage(IUsageRecord record) {
-
-            }
-
-            @Override
-            public IUsageRecord getCurrentUsageRecord() {
-                return null;
-            }
-
-            @Override
-            public void endUsage(long dateTime) {
-
-            }
-
-            @Override
-            public List<IUsageRecord> getUsageRecords() {
-                return null;
-            }
-        };
+        ISeasonTicket iSeasonTicket;
         IUsageRecordFactory factory = new IUsageRecordFactory() {
             @Override
             public IUsageRecord make(String ticketId, long startDateTime) {
@@ -203,6 +158,8 @@ class SeasonTicketDAOTest {
             }
         };
         SeasonTicketDAO seasonTicketDAO = new SeasonTicketDAO(factory);
+        iSeasonTicket = seasonTicketDAO.findTicketById("736366336363");
+        assertEquals("736366336363", iSeasonTicket);
     }
 }
 
