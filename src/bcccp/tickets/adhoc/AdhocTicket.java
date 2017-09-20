@@ -49,7 +49,7 @@ public class AdhocTicket implements IAdhocTicket {
 	@Override
 	public String getCarparkId() {
 		// TODO Auto-generated method stub
-		this.carparkIdid=id;
+		this.carparkIdid=id;// get catparkid
 		return null;
 	}
 
