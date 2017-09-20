@@ -90,6 +90,7 @@ public class AdhocTicket implements IAdhocTicket {
 	public long getPaidDateTime() {
 		
 		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+		private static final DateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 		
 		// TODO Auto-generated method stub
 		return 0;
