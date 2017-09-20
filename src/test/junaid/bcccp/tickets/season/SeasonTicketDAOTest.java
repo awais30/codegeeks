@@ -161,6 +161,11 @@ class SeasonTicketDAOTest {
         iSeasonTicket = seasonTicketDAO.findTicketById("736366336363");
         assertEquals(null, iSeasonTicket);
     }
+
+    @Test
+    void getNumberOfTickets(){
+
+    }
 }
 
 
