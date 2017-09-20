@@ -14,5 +14,7 @@ class UsageRecordFactoryTest {
         //Creating Object
         SeasonTicket seasonTicket = new SeasonTicket("TIC111", "NobalPark111", 1111, 2222);
         UsageRecordFactory usageRecordFactory = new UsageRecordFactory();
+        usageRecordFactory.make(seasonTicket.getId(), seasonTicket.getStartValidPeriod());
+
     }
 }
