@@ -93,7 +93,7 @@ public class AdhocTicket implements IAdhocTicket {
 		private static final DateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 		private static final DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
 		 Date date = new Date();
-		
+		 System.out.println(sdf.format(date));
 		// TODO Auto-generated method stub
 		return 0;
 	}
@@ -161,7 +161,7 @@ public class AdhocTicket implements IAdhocTicket {
         System.out.println(DateTimeFormatter.ofPattern("yyy/MM/dd").format(localDate));
 
 		// TODO Auto-generated method stub */
-		// TODO Auto-generated method stub */
+		// TODO Auto-generated method stub 
 		
 	}
 
