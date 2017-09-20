@@ -73,7 +73,7 @@ public class SeasonTicket implements ISeasonTicket {
 		
 	    int record;
 		int carparkId;
-		
+		IUsageRecord record=new IUsageRecord<>;
 		
 		
 		// TODO Auto-generated method stub
