@@ -16,7 +16,7 @@ public class AdhocTicket implements IAdhocTicket {
 	
 	public AdhocTicket(String carparkId, int ticketNo, String barcode) {
 
-   
+
 	
 	//TDO Implement constructor
         String carparkId=1;
@@ -132,18 +132,19 @@ public class AdhocTicket implements IAdhocTicket {
 
 	@Override
 	public void exit(long dateTime) {
-		//DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 		private static final DateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
          private static final DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
 
-
+// Creating date object 
         Date date = new Date();
-        System.out.println(sdf.format(date));
+        System.out.println(sdf.format(date)); // show date to user on screen 
+		
 
         Calendar cal = Calendar.getInstance();
         System.out.println(sdf.format(cal.getTime()));
 
-       /* LocalDateTime now = LocalDateTime.now();
+       LocalDateTime now = LocalDateTime.now();
         System.out.println(dtf.format(now));
 
         LocalDate localDate = LocalDate.now();
@@ -168,7 +169,14 @@ public class AdhocTicket implements IAdhocTicket {
 	@Override
 	public boolean hasExited() {
 		// TODO Auto-generated method stub
-		if()
+		if(pay=='true')
+		{
+			System.out.println("Exit successfully");
+			
+		}
+		
+		else
+		
 		return false;
 	}
 
