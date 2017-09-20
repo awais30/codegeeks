@@ -24,7 +24,7 @@ public class SeasonTicket implements ISeasonTicket {
 		this.ticketId = "4444"; // 4444 is the default ticket id at the start of the system.
 		this.carparkId = "55555"; // 5555 is the defaul carpar id at the start of the system.
 		this.startValidPeriod = null; //null is the default valid period
-        this.endValidPeriod = -1; // -1 is the default valid period
+        this.endValidPeriod = null; // null is the default valid period
 	}
 
 	@Override
