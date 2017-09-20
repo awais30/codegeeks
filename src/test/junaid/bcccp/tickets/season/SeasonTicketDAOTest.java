@@ -194,6 +194,11 @@ class SeasonTicketDAOTest {
             seasonTicketDAO.recordTicketEntry("1");
         });
     }
+
+    @Test
+    void recordTicketExit(){
+
+    }
 }
 
 
