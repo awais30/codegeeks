@@ -33,6 +33,7 @@ public class AdhocTicket implements IAdhocTicket {
 	public int getTicketNo() {
 		// TODO Auto-generated method stub
 		this.ticketNo=ticketNo;
+		
 		return 0;
 	}
 
@@ -40,7 +41,7 @@ public class AdhocTicket implements IAdhocTicket {
 	@Override
 	public String getBarcode() {
 		// TODO Auto-generated method stub
-		this.barcode=barcode;
+		this.barcode=barcode;// get barcode value 
 		return null;
 	}
 
@@ -48,13 +49,16 @@ public class AdhocTicket implements IAdhocTicket {
 	@Override
 	public String getCarparkId() {
 		// TODO Auto-generated method stub
-		this.carparkIdid=id;
+		this.carparkIdid=id;// get catparkid
 		return null;
 	}
 
 
 	@Override
 	public void enter(long dateTime) {
+		
+		Date date = new Date(); //Date class object
+        System.out.println(sdf.format(date));
 		// TODO Auto-generated method stub
 		
 	}
@@ -63,6 +67,7 @@ public class AdhocTicket implements IAdhocTicket {
 	@Override
 	public long getEntryDateTime() {
 		// TODO Auto-generated method stub
+		return entryDatetime; // returns date time of system
 		return 0;
 	}
 
@@ -78,12 +83,21 @@ public class AdhocTicket implements IAdhocTicket {
 	@Override
 	public void pay(long dateTime, float charge) {
 		// TODO Auto-generated method stub
+		this.dateTime= LocalDateTime.now();//
+		this.charge=charge;
+		
 		
 	}
 
 
 	@Override
 	public long getPaidDateTime() {
+		
+		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+		private static final DateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+		private static final DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+		 Date date = new Date();
+		 System.out.println(sdf.format(date));
 		// TODO Auto-generated method stub
 		return 0;
 	}
@@ -102,7 +116,7 @@ public class AdhocTicket implements IAdhocTicket {
 			//output message to user 
 			Syestem.out.println("Payment not proceed successfully");
 		}
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub//
 		return false;
 	}
 
@@ -151,7 +165,7 @@ public class AdhocTicket implements IAdhocTicket {
         System.out.println(DateTimeFormatter.ofPattern("yyy/MM/dd").format(localDate));
 
 		// TODO Auto-generated method stub */
-		// TODO Auto-generated method stub */
+		// TODO Auto-generated method stub 
 		
 	}
 
