@@ -60,9 +60,10 @@ public class SeasonTicket implements ISeasonTicket {
 		// TODO Auto-generated method stub
 		if (carparkId== 'True')
 		{
-			
+			return=='true';
 			
 		}
+		else 
 		return false;
 	}
 
