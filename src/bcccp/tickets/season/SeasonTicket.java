@@ -89,7 +89,12 @@ public class SeasonTicket implements ISeasonTicket {
 	@Override
 	public void endUsage(long dateTime) {
 		// TODO Auto-generated method stub
-		
+  // Instantiate a Date object
+      Date date = new Date();
+
+      // display time and date using toString()
+      System.out.println(date.toString());
+   }		
 	}
 
 	@Override
