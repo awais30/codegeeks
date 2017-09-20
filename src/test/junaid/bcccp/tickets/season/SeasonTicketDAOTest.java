@@ -180,6 +180,7 @@ class SeasonTicketDAOTest {
     @Test
     void recordTicketEntry(){
         // Creating Object
+        ISeasonTicket iSeasonTicket;
     }
 }
 
