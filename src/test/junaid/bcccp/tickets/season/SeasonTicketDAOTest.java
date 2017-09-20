@@ -196,6 +196,7 @@ class SeasonTicketDAOTest {
                 return null;
             }
         };
+        SeasonTicketDAO seasonTicketDAO = new SeasonTicketDAO();
     }
 }
 
