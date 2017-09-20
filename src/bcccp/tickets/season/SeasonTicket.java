@@ -7,7 +7,7 @@ import java.util.List;
 public class SeasonTicket implements ISeasonTicket {
 	
 	private List<IUsageRecord> usages;
-	private IUsageRecord currentUsage = null;
+	private IUsageRecord currentUsage = null;//initilize record usage to null
 	
 	private String ticketId;
 	private String carparkId;
