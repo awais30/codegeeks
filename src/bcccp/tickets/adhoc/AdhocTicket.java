@@ -22,25 +22,6 @@ public class AdhocTicket implements IAdhocTicket {
 		this.ticketNo_ = ticketNo;
 		this.barcode = barcode;
 		this.state_ = STATE.ISSUED;		
-
-   
-	
-	//TDO Implement constructor
-        String carparkId=1;
-		int ticketNo=12345;
-		String barcode='abc1234';
-
-
-
-
-	}
-
-
-	@Override
-	public int getTicketNo() {
-		// TODO Auto-generated method stub
-		this.ticketNo=ticketNo;
-		return 0;
 	}
 
 	
@@ -48,9 +29,6 @@ public class AdhocTicket implements IAdhocTicket {
 	@Override
 	public String getBarcode() {
 		return barcode;
-		// TODO Auto-generated method stub
-		this.barcode=barcode;
-		return null;
 	}
 
 
@@ -58,9 +36,6 @@ public class AdhocTicket implements IAdhocTicket {
 	@Override
 	public String getCarparkId() {
 		return carparkId_;
-		// TODO Auto-generated method stub
-		this.carparkIdid=id;
-		return null;
 	}
 
 	
@@ -92,10 +67,6 @@ public class AdhocTicket implements IAdhocTicket {
 		this.paidDateTime = paidDateTime;
 		this.charge = charge;
 		state_ = STATE.PAID;
-	public boolean isCurrent() {
-		
-		// TODO Auto-generated method stub
-		return false;
 	}
 	
 	
@@ -133,22 +104,6 @@ public class AdhocTicket implements IAdhocTicket {
 	@Override
 	public boolean isCurrent() {
 		return state_ == STATE.CURRENT;
-  }
-	
-    public boolean isPaid() {
-		
-		if(isPaid='true')
-		{ // success message to user 
-			System.out.println("Ticket Paid Successfully");
-			
-		}
-		else 
-		{
-			//output message to user 
-			Syestem.out.println("Payment not proceed successfully");
-		}
-		// TODO Auto-generated method stub
-		return false;
 	}
 
 
@@ -156,25 +111,6 @@ public class AdhocTicket implements IAdhocTicket {
 	@Override
 	public boolean isPaid() {
 		return state_ == STATE.PAID;
-	public float getCharge() {
-		// TODO Auto-generated method stub
-		float ticket = (float) 12.4;
-		float calcTicket=ticket;
-		if (paidticket<calcTicket);
-		
-		{
-			
-			System.out.pritnln("Please paid Full amount // See Controler Room");
-			
-			
-		}
-		
-		else 
-		{
-			System.out.println("Thanks for using Prking .See you next time");
-			
-		}
-		return 0;
 	}
 
 
@@ -183,26 +119,6 @@ public class AdhocTicket implements IAdhocTicket {
 	public void exit(long dateTime) {
 		exitDateTime = dateTime;
 		state_ = STATE.EXITED;
-		//DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-		private static final DateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-         private static final DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
-
-
-        Date date = new Date();
-        System.out.println(sdf.format(date));
-
-        Calendar cal = Calendar.getInstance();
-        System.out.println(sdf.format(cal.getTime()));
-
-       /* LocalDateTime now = LocalDateTime.now();
-        System.out.println(dtf.format(now));
-
-        LocalDate localDate = LocalDate.now();
-        System.out.println(DateTimeFormatter.ofPattern("yyy/MM/dd").format(localDate));
-
-		// TODO Auto-generated method stub */
-		// TODO Auto-generated method stub */
-		
 	}
 
 
@@ -210,11 +126,6 @@ public class AdhocTicket implements IAdhocTicket {
 	@Override
 	public long getExitDateTime() {
 		return exitDateTime;
-		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-        Calendar cal = Calendar.getInstance();
-        System.out.println(dateFormat.format(cal.getTime()));
-		// TODO Auto-generated method stub
-		return 0;
 	}
 
 
@@ -222,10 +133,6 @@ public class AdhocTicket implements IAdhocTicket {
 	@Override
 	public boolean hasExited() {
 		return state_ == STATE.EXITED;
-		// TODO Auto-generated method stub
-		if()
-		return false;
-
 	}
 
 

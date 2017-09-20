@@ -30,61 +30,60 @@ public class Main {
 					CarSensor eos = new CarSensor("Entry Outside Sensor", 20, 100);
 					Gate egate = new Gate(20, 320);
 					CarSensor eis = new CarSensor("Entry Inside Sensor", 20, 440);
-					EntryUI eui = new EntryUI(320, 100);
-
+					EntryUI eui = new EntryUI(320, 100);	
+					
 					PaystationUI pui = new PaystationUI(660, 100);
-
-					ExitUI xui = new ExitUI(1000, 100);
+					
+					ExitUI xui = new ExitUI(1000, 100);	
 					CarSensor xis = new CarSensor("Exit Inside Sensor", 1330, 100);
 					Gate xgate = new Gate(1330, 320);
 					CarSensor xos = new CarSensor("Exit Outside Sensor", 1330, 440);
-
+					
 					IAdhocTicketDAO adhocTicketDAO = new AdhocTicketDAO(new AdhocTicketFactory());
 					ISeasonTicketDAO seasonTicketDAO = new SeasonTicketDAO(new UsageRecordFactory());
-
+					
 					Carpark carpark = new Carpark("Bathurst Chase", 5, adhocTicketDAO, seasonTicketDAO);
-
+					
 					ISeasonTicket t1 = new SeasonTicket("S1111","Bathurst Chase", 0L, 0L);
 					ISeasonTicket t2 = new SeasonTicket("S2222","Bathurst Chase", 0L, 0L);
-
+					
 					carpark.registerSeasonTicket(t1);
 					carpark.registerSeasonTicket(t2);
-
+					
 					//issue a ticket so that paystation can be tested
 					carpark.issueAdhocTicket();
 					carpark.recordAdhocTicketEntry();
 					carpark.recordSeasonTicketEntry(t1.getId());
-
+					
 					IAdhocTicket ticket = carpark.issueAdhocTicket();
 					ticket.pay(System.currentTimeMillis(), 5.0f);
-
+					
 					@SuppressWarnings("unused")
-					EntryController entryController =
+					EntryController entryController = 
 							new EntryController(carpark, egate, eos, eis, eui);
-
+					
 					@SuppressWarnings("unused")
-					PaystationController payController =
+					PaystationController payController = 
 							new PaystationController(carpark, pui);
-
+					
 					@SuppressWarnings("unused")
-					ExitController exitController =
-							new ExitController(carpark, xgate, xis, xos, xui);
-
+					ExitController exitController = 
+					new ExitController(carpark, xgate, xis, xos, xui);
+					
 					eos.setVisible(true);
 					egate.setVisible(true);
 					eis.setVisible(true);
 					eui.setVisible(true);
-
+					
 					pui.setVisible(true);
-
+					
 					xui.setVisible(true);
 					xis.setVisible(true);
 					xgate.setVisible(true);
 					xos.setVisible(true);
-
-				}
+					
+				} 
 				catch (Exception e) {
-
 					e.printStackTrace();
 				}
 			}

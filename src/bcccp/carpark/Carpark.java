@@ -22,12 +22,11 @@ public class Carpark implements ICarpark {
 	public Carpark(String name, int capacity, 
 			IAdhocTicketDAO adhocTicketDAO, 
 			ISeasonTicketDAO seasonTicketDAO) {
-		  this.carparkId = name;
-		  this.capacity = capacity;
-		  observers = new ArrayList<>();
-		  this.adhocTicketDAO = adhocTicketDAO;
-		  this.seasonTicketDAO = seasonTicketDAO;
-
+		this.carparkId = name;
+		this.capacity = capacity;
+		observers = new ArrayList<>();
+		this.adhocTicketDAO = adhocTicketDAO;
+		this.seasonTicketDAO = seasonTicketDAO;
 	}
 
 	
