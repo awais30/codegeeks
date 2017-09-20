@@ -112,7 +112,7 @@ public class AdhocTicket implements IAdhocTicket {
 			//output message to user 
 			Syestem.out.println("Payment not proceed successfully");
 		}
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub//
 		return false;
 	}
 
