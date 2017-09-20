@@ -12,5 +12,6 @@ class UsageRecordFactoryTest {
     @Test
     void make(){
         //Creating Object
+
     }
 }
