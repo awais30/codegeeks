@@ -94,11 +94,15 @@ public class SeasonTicket implements ISeasonTicket {
 
       // display time and date using toString()
       System.out.println(date.toString());
+	  
+	  
    }		
 	}
 
 	@Override
 	public List<IUsageRecord> getUsageRecords() {
+		
+		
 		// TODO Auto-generated method stub
 		return null;
 	}
