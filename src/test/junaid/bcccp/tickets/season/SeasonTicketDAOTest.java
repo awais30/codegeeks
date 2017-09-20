@@ -206,6 +206,7 @@ class SeasonTicketDAOTest {
             }
         };
         SeasonTicketDAO seasonTicketDAO = new SeasonTicketDAO(factory);
+        iSeasonTicket = seasonTicketDAO.findTicketById("736366336363");
     }
 }
 
