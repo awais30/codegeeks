@@ -146,4 +146,9 @@ class SeasonTicketDAOTest {
         SeasonTicketDAO seasonTicketDAO = new SeasonTicketDAO(factory);
         seasonTicketDAO.deregisterTicket(seasonTicket);
     }
+
+    @Test
+    void findTicketById(){
+
+    }
 }
