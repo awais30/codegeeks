@@ -58,7 +58,7 @@ public class SeasonTicket implements ISeasonTicket {
 	@Override
 	public boolean inUse() {
 		// TODO Auto-generated method stub
-		if ()
+		if (carparkId== 'True')
 		{
 			
 			
@@ -68,6 +68,8 @@ public class SeasonTicket implements ISeasonTicket {
 
 	@Override
 	public void recordUsage(IUsageRecord record) {
+		
+	 
 		// TODO Auto-generated method stub
 		
 	}
