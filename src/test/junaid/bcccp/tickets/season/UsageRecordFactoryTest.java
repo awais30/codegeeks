@@ -17,4 +17,6 @@ class UsageRecordFactoryTest {
         usageRecordFactory.make(seasonTicket.getId(), seasonTicket.getStartValidPeriod());
         assertEquals(null, usageRecordFactory.make(seasonTicket.getId(), seasonTicket.getStartValidPeriod()));
     }
+
+
 }
