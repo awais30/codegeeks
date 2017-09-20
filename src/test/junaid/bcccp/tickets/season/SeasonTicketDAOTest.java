@@ -195,7 +195,7 @@ class SeasonTicketDAOTest {
             public List<IUsageRecord> getUsageRecords() {
                 return null;
             }
-        }
+        };
     }
 }
 
