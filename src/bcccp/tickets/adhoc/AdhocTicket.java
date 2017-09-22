@@ -4,13 +4,16 @@ import java.util.Date;
 
 public class AdhocTicket implements IAdhocTicket {
 	
-	private String carparkId;
-	private int ticketNo;
+	private String carparkId_;
+	private int ticketNo_;
 	private long entryDateTime;
 	private long paidDateTime;
 	private long exitDateTime;
 	private float charge;
 	private String barcode;
+	private STATE state_;
+	
+	private enum STATE { ISSUED, CURRENT, PAID, EXITED }
 
 	
 	
@@ -35,63 +38,101 @@ public class AdhocTicket implements IAdhocTicket {
 		this.ticketNo=ticketNo;
 		
 		return 0;
+
+		this.carparkId_ = carparkId;
+		this.ticketNo_ = ticketNo;
+		this.barcode = barcode;
+		this.state_ = STATE.ISSUED;		
+
 	}
 
-
+	
+	
 	@Override
 	public String getBarcode() {
+
 		// TODO Auto-generated method stub
 		this.barcode=barcode;// get barcode value 
 		return null;
+
+		return barcode;
+
 	}
 
 
+	
 	@Override
 	public String getCarparkId() {
+
 		// TODO Auto-generated method stub
 		this.carparkIdid=id;// get catparkid
 		return null;
+
+		return carparkId_;
+
 	}
 
-
+	
+	
 	@Override
+
 	public void enter(long dateTime) {
 		
 		Date date = new Date(); //Date class object
         System.out.println(sdf.format(date));
 		// TODO Auto-generated method stub
 		
+
+	public int getTicketNo() {
+		return ticketNo_;
+
 	}
+	
 
-
+	
 	@Override
+
 	public long getEntryDateTime() {
 		// TODO Auto-generated method stub
 		return entryDatetime; // returns date time of system
 		return 0;
+
+	public void enter(long entryDateTime) {
+		this.entryDateTime = entryDateTime;
+		this.state_ = STATE.CURRENT;		
+
+	}
+	
+	
+	
+	@Override
+	public long getEntryDateTime() {
+		return entryDateTime;
 	}
 
-
+	
+	
 	@Override
-	public boolean isCurrent() {
-		
-		// TODO Auto-generated method stub
-		return false;
-	}
 
-
-	@Override
 	public void pay(long dateTime, float charge) {
 		// TODO Auto-generated method stub
 		this.dateTime= LocalDateTime.now();//
 		this.charge=charge;
 		
 		
+
+	public void pay(long paidDateTime, float charge) {
+		this.paidDateTime = paidDateTime;
+		this.charge = charge;
+		state_ = STATE.PAID;
+
 	}
-
-
+	
+	
+	
 	@Override
 	public long getPaidDateTime() {
+
 		
 		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 		private static final DateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
@@ -120,31 +161,36 @@ public class AdhocTicket implements IAdhocTicket {
 		return false;
 	}
 
-
-	@Override
-	public float getCharge() {
-		// TODO Auto-generated method stub
-		float ticket = (float) 12.4;
-		float calcTicket=ticket;
-		if (paidticket<calcTicket);
-		
-		{
-			
-			System.out.pritnln("Please paid Full amount // See Controler Room");
-			
-			
-		}
-		
-		else 
-		{
-			System.out.println("Thanks for using Prking .See you next time");
-			
-		}
-		return 0;
+		return paidDateTime;
 	}
 
 
+
 	@Override
+	public float getCharge() {
+		return charge;
+	}
+
+	
+	
+	public String toString() {
+		Date entryDate = new Date(entryDateTime);
+		Date paidDate = new Date(paidDateTime);
+		Date exitDate = new Date(exitDateTime);
+
+		return "Carpark    : " + carparkId_ + "\n" +
+		       "Ticket No  : " + ticketNo_ + "\n" +
+		       "Entry Time : " + entryDate + "\n" + 
+		       "Paid Time  : " + paidDate + "\n" + 
+		       "Exit Time  : " + exitDate + "\n" +
+		       "State      : " + state_ + "\n" +
+		       "Barcode    : " + barcode;		
+	}
+
+
+
+	@Override
+
 	public void exit(long dateTime) {
 		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 		private static final DateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
@@ -155,33 +201,49 @@ public class AdhocTicket implements IAdhocTicket {
         System.out.println(sdf.format(date)); // show date to user on screen 
 		
 
-        Calendar cal = Calendar.getInstance();
-        System.out.println(sdf.format(cal.getTime()));
+	public boolean isCurrent() {
+		return state_ == STATE.CURRENT;
+	}
+
+
+
+
+	@Override
+	public boolean isPaid() {
+		return state_ == STATE.PAID;
+	}
+
 
        LocalDateTime now = LocalDateTime.now();
         System.out.println(dtf.format(now));
 
-        LocalDate localDate = LocalDate.now();
-        System.out.println(DateTimeFormatter.ofPattern("yyy/MM/dd").format(localDate));
+
+
+
 
 		// TODO Auto-generated method stub */
 		// TODO Auto-generated method stub 
 		
+
+	@Override
+	public void exit(long dateTime) {
+		exitDateTime = dateTime;
+		state_ = STATE.EXITED;
+
 	}
+
 
 
 	@Override
 	public long getExitDateTime() {
-		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-        Calendar cal = Calendar.getInstance();
-        System.out.println(dateFormat.format(cal.getTime()));
-		// TODO Auto-generated method stub
-		return 0;
+		return exitDateTime;
 	}
+
 
 
 	@Override
 	public boolean hasExited() {
+
 		// TODO Auto-generated method stub
 		if(pay=='true')
 		{
@@ -192,8 +254,10 @@ public class AdhocTicket implements IAdhocTicket {
 		else
 		
 		return false;
+
+		return state_ == STATE.EXITED;
+
 	}
 
-	
-	
+
 }
