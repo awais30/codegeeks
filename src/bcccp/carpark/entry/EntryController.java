@@ -32,14 +32,18 @@ public class EntryController
 			ICarSensor is,
 			IEntryUI ui) {
 		//entry controller
-
+		this.carpark = carpark;
+		this.entryGate = entryGate;
+		this.outsideSensor = os;
+		this.insideSensor = is;
+		this.ui = ui;
 	}
 
 
 
 	@Override
 	public void buttonPushed() {
-		// TODO Auto-generated method stub
+		System.out.println("Button Pushed");
 		
 	}
 
@@ -47,7 +51,7 @@ public class EntryController
 
 	@Override
 	public void ticketInserted(String barcode) {
-		// TODO Auto-generated method stub
+		System.out.println("Ticket inserted.");
 		
 	}
 
@@ -55,24 +59,22 @@ public class EntryController
 
 	@Override
 	public void ticketTaken() {
-		// TODO Auto-generated method stub
-		
+
+		System.out.println("Ticket taken.");
 	}
 
 
 
 	@Override
 	public void notifyCarparkEvent() {
-		// TODO Auto-generated method stub
-		
+		System.out.println("Notified Car park event.");
 	}
 
 
 
 	@Override
 	public void carEventDetected(String detectorId, boolean detected) {
-		// TODO Auto-generated method stub
-		
+		System.out.println("Car Event detected");
 	}
 
 	
