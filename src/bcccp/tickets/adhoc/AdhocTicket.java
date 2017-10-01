@@ -199,7 +199,17 @@ public class AdhocTicket implements IAdhocTicket {
 // Creating date object 
         Date date = new Date();
         System.out.println(sdf.format(date)); // show date to user on screen 
-		
+
+
+	@Override
+	public long getExitDateTime() {
+		return 0;
+	}
+
+	@Override
+	public boolean hasExited() {
+		return false;
+	}
 
 	public boolean isCurrent() {
 		return state_ == STATE.CURRENT;
