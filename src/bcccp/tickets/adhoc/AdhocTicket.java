@@ -199,11 +199,11 @@ public class AdhocTicket implements IAdhocTicket {
 		final DateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 		final DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
 
-// Creating date object 
-        Date date = new Date();
-        System.out.println(sdf.format(date)); // show date to user on screen 
+		// Creating date object
+		Date date = new Date();
+		System.out.println(sdf.format(date)); // show date to user on screen
 
-
+	}
 	@Override
 	public long getExitDateTime() {
 		return 0;
