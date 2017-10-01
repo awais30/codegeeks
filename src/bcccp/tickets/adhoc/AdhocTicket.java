@@ -224,12 +224,10 @@ public class AdhocTicket implements IAdhocTicket {
 	@Override
 	public boolean isPaid() {
 
+		LocalDateTime now = LocalDateTime.now();
+		System.out.println(dtf.format(now));
 		return state_ == STATE.PAID;
 	}
-
-
-       LocalDateTime now = LocalDateTime.now();
-        System.out.println(dtf.format(now));
 
 
 
