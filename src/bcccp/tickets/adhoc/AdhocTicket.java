@@ -223,6 +223,7 @@ public class AdhocTicket implements IAdhocTicket {
 
 	@Override
 	public boolean isPaid() {
+
 		return state_ == STATE.PAID;
 	}
 
