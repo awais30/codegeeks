@@ -230,9 +230,7 @@ public class AdhocTicket implements IAdhocTicket {
 
 	@Override
 	public boolean hasExited() {
-
-		// TODO Auto-generated method stub
-		if(pay=='true')
+    	if(pay=='true')
 		{
 			System.out.println("Exit successfully");
 			
