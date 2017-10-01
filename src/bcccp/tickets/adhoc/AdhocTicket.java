@@ -243,6 +243,4 @@ public class AdhocTicket implements IAdhocTicket {
 		return state_ == STATE.EXITED;
 
 	}
-
-
 }
