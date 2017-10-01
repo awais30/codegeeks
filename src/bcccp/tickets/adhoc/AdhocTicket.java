@@ -192,14 +192,12 @@ public class AdhocTicket implements IAdhocTicket {
 	}
 
 
+	DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+	final DateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+	final DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
 
 	@Override
-
 	public void exit(long dateTime) {
-		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-		final DateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-		final DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
-
 		// Creating date object
 		Date date = new Date();
 		System.out.println(sdf.format(date)); // show date to user on screen
@@ -229,14 +227,6 @@ public class AdhocTicket implements IAdhocTicket {
 		System.out.println(dtf.format(now));
 		return state_ == STATE.PAID;
 	}
-
-
-
-
-
-		// TODO Auto-generated method stub */
-		// TODO Auto-generated method stub 
-		
 
 	@Override
 	public void exit(long dateTime) {
