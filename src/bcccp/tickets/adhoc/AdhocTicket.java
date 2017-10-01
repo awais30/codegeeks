@@ -196,7 +196,7 @@ public class AdhocTicket implements IAdhocTicket {
 
 	public void exit(long dateTime) {
 		DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-		static final DateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+		final DateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
          private static final DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
 
 // Creating date object 
