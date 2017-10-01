@@ -229,22 +229,6 @@ public class AdhocTicket implements IAdhocTicket {
 	}
 
 	@Override
-	public void exit(long dateTime) {
-		exitDateTime = dateTime;
-		state_ = STATE.EXITED;
-
-	}
-
-
-
-	@Override
-	public long getExitDateTime() {
-		return exitDateTime;
-	}
-
-
-
-	@Override
 	public boolean hasExited() {
 
 		// TODO Auto-generated method stub
